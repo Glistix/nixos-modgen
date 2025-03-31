@@ -43,3 +43,7 @@ nix develop   # Optional: Spawn a shell with glistix
 glistix run   # Run the project
 glistix test  # Run the tests
 ```
+
+## License
+
+Licensed under MIT or Apache-2.0, at your option.

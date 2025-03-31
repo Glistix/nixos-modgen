@@ -6,7 +6,7 @@ target = "nix"
 # your project to the Hex package manager.
 #
 # description = ""
-# licences = ["Apache-2.0"]
+licences = ["MIT", "Apache-2.0"]
 # repository = { type = "github", user = "", repo = "" }
 # links = [{ title = "Website", href = "" }]
 #
