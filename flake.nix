@@ -21,7 +21,7 @@
     };
 
     # Pick your Glistix version here.
-    glistix.url = "github:glistix/glistix/v0.3.0";
+    glistix.url = "github:glistix/glistix/v0.7.0";
   };
 
   outputs =
@@ -47,7 +47,7 @@
       # Add them as inputs to the flake, and then specify where to clone them to
       # during build below.
       submodules = [
-        
+
       ];
 
       # If you cache your build output, this will specify the path
