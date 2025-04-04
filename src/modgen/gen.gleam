@@ -34,9 +34,6 @@ fn camel_to_snake_case(string: String) -> String {
 
 /// Perform codegen based on a module evaluation.
 pub fn from_eval(eval_result: ModuleEval) -> AttrSet(Dynamic) {
-  #("HelldoWorldIAmCool", camel_to_snake_case("HelldoWorldIAmCool"))
-  |> io.debug
-
   let options_root =
     eval_result
     |> module_eval.options
