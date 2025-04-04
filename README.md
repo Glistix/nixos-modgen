@@ -1,23 +1,21 @@
-# modgen_test
+# nixos-modgen (WIP)
 
-[![Package Version](https://img.shields.io/hexpm/v/modgen_test)](https://hex.pm/packages/modgen_test)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/modgen_test/)
+A **work in progress** Gleam binding generator for NixOS modules, to be used in Glistix.
 
-```sh
-glistix add modgen_test@1
-```
-```gleam
-import modgen_test
+## This is work in progress (WIP)
 
-pub fn main() {
-  // TODO: An example of the project in use
-}
-```
+This is a work in progress [Glistix project](https://github.com/glistix/glistix). The intention of this repository is to attract interested contributors!
 
-**Note:** This is a Glistix project, and as such may require the
-[Glistix compiler](https://github.com/glistix/glistix) to be used.
+We discuss progress in our Zulip, such as in [this thread.](https://glistix.zulipchat.com/#narrow/channel/453881-general/topic/NixOS.20binding.20generator.20contribution/with/510046966) Feel free to join us! (There is a Zulip invite in the [Glistix compiler's repository](https://github.com/glistix/glistix)).
 
-Further documentation can be found at <https://hexdocs.pm/modgen_test>.
+## Testing
+
+You can run the integration tests and check out generation results by:
+
+1. Installing `glistix`, e.g. by running `nix develop`
+2. Running `cd integration/default-config`
+3. Executing `./test.sh`
+4. Generation results should appear in the `result` folder.
 
 ## Importing from Nix
 
@@ -39,9 +37,8 @@ in result
 ## Development
 
 ```sh
-nix develop   # Optional: Spawn a shell with glistix
-glistix run   # Run the project
-glistix test  # Run the tests
+nix develop   # Optional: Spawn a shell with glistix if you don't have it
+cd integration/default-config && ./test.sh # Run generation test
 ```
 
 ## License
